@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <title>Code Challenge</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+		<script language="javascript">
+		function quotes(){
+
+var aquote = new Array;
+aquote[0]="\"You don't take a photograph, you make it\"-Ansel Adams";
+aquote[1]="\"Photography takes an instant out of time, altering life by holding it still\"";
+aquote[2]="\"Photography is the story I fail to put into words\""
+
+rdmQuote = Math.floor(Math.random()*aquote.length);
+document.getElementById("txtbox") .value=aquote[rdmQuote];
+}
+window.onload=quotes;
+</script>
+        <script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+		
+		
+    </head>
+	
+    <body>
+	
+        <div class="container" id="container">
+		
+            <div class="gallery">
+			<h2>PHOTO GALLERY</h2>
+			
+			<textarea id="txtbox" readonly></textarea>
+                <a tabindex="1"><img src="http://lorempixel.com/400/200/city/"></a>
+                <a tabindex="1"><img src="http://lorempixel.com/400/200/animals/"></a>
+                
+                
+                <span class="close"></span>
+            </div>
+			<div class="gallery">
+			<a tabindex="1"><img src="http://lorempixel.com/400/200/sports/"></a>
+                <a tabindex="1"><img src="http://lorempixel.com/g/400/200/fashion/"></a>
+				<span class="close"></span>
+			
+            </div>
+								 
+				<a href="file:///C:/Users/Sushma/Desktop/code_challenge/source/code_challenge/page.html"  class="button" >Refresh</a>
+				
+        </div>
+
+        
+    </body>
+</html>
